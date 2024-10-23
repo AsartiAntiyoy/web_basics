@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+    function formSubmit() {
+    document.forms["myForm"].submit();
+     }
+  </script>
+</head>
+<body>
+  
+  <h1>Моя перша HTML-форма</h1>
+  
+  <form name="myForm" action="https://httpbin.org/post" method="post">
+    
+    <label for="fname">ім'я:</label>
+    <input id="nm_1" type="text" name="Uname" placeholder="як вас звати?"><br><br>
+    <label for="fname">дата народження:</label>
+    <input id="Udt_1" type="date" name="Udate_birth"><br><br>
+    <label for="fname">імейл:</label>
+    <input id="ml_1" type="email" name="Uemail" placeholder="яка ваша адреса?"><br><br>
+    <label for="fname">повідомлення:</label>
+    <textarea id="comnt_1" name="comment" rows="3" cols="15"></textarea><br><br>
+    <input type="button" onclick="formSubmit()" value="конверт">
+    <input type="reset" value="ластик"><br><br>
+    
+    <label for="favorite_course">Який ваш улюблений курс?</label><br>
+    Основи веб-розробки
+    <input type="radio" name="t"><br>
+    Веб-розробка
+    <input type="radio" name="t" checked>
+    Веб
+    <input type="radio" name="t"><br><br>
+    
+    
+    
+    <label for="favorite_teacher">Який ваш улюблений викладач?</label><br>
+    Бучук Роман Юрійович
+    <input type="checkbox" disabled checked><br>
+    Сайберт Федір Федорович
+    <input type="checkbox" disabled checked>
+    
+    
+  </form>
+  
+  <picture>
+    <source media="(min-width: 768px)" src="https://picsum.photos/300/500" alt="Random Image" >
+    <img src="https://picsum.photos/1000/400" alt="Random Image">
+  </picture>
+  
+</body>
+</html>
